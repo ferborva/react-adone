@@ -1,10 +1,10 @@
-# React Adone
+# React Adone 🗑
 
 Yes, this is another Redux-like/Context-alternative solution. Probably you better off using more well known libs unless:
 
 - You don't want to create hundreds of Contexts to share pieces of state
 - You have a huge app and a single Redux store is not possible
-- Your tree is already deep enought and Context will make things even worse
+- Your tree is already deep enough and Context will make things even worse
 - You have high performance requirements (Adone uses some tricks to avoid duplicate renders and uses the Context API just on first render because it is [a bit slower](https://github.com/facebook/react/issues/13739) than a subscription based store)
 - You want your app still working even if you omit the Provider
 - You still want to use Redux Devtools (because it's handy!)
